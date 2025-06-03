@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Raku-Ticket",
+  "version": "1.0.0",
+  "description": "乃木坂46のライブに申し込む際に、指定した値で楽天チケットの申込フォームを自動入力します",
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["https://ticket.rakuten.co.jp/lots/events/*/entry/*"],
+  "action": {},
+  "content_scripts": [
+    {
+      "matches": ["https://ticket.rakuten.co.jp/lots/events/*/entry/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
